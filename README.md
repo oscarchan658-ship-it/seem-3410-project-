@@ -1,6 +1,7 @@
 # CUHK Cafe (Tolo) cashier staffing simulation
 
-Requirements: Python 3.10+, numpy, scipy, pandas, matplotlib.
+Requirements: Python 3.10+ (tested on 3.14.0), numpy 2.4.6, scipy 1.16.2, pandas 3.0.3, matplotlib 3.10.6.
+Install: `pip install numpy scipy pandas matplotlib`
 
 Data
 - Collected on-site at the CUHK Cafe (Tolo) ordering counter on 23, 24 and 25 November 2026 (Mon-Wed), lunch peak 11:45-13:30.
@@ -17,5 +18,5 @@ Run
 python fit_inputs.py            # fits inputs.json from data/customers.csv
 python run_experiments.py --reps 300
 ```
-Seeds: `SeedSequence(3410)` for the main experiment (777 sensitivity, 555 kiosk sweep, 99 validation).
+Seeds: `SeedSequence(3410)` for the main experiment (777 sensitivity, 99 validation). Default 300 replications (150 for each sensitivity scenario).
 Every policy within a replication uses the same random stream (common random numbers).
