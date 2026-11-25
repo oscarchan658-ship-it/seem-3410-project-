@@ -1,0 +1,4 @@
+day,arrive,start,end,type,outcome
+1,0.4,0.4,1.3,small,served
+1,1.1,1.3,3.4,large,served
+1,2.0,,7.5,large,abandoned

@@ -1,0 +1,41 @@
+{
+  "_note": "Fitted by fit_inputs.py from data/customers.csv.",
+  "source": "observed (3 days, 310 customers)",
+  "window_min": 105,
+  "block_len_min": 15,
+  "block_labels": [
+    "11:45",
+    "12:00",
+    "12:15",
+    "12:30",
+    "12:45",
+    "13:00",
+    "13:15"
+  ],
+  "arrival_rate_per_min": [
+    0.6889,
+    0.7333,
+    1.7556,
+    1.2667,
+    1.1333,
+    0.7778,
+    0.5333
+  ],
+  "p_small": 0.503,
+  "service": {
+    "small": {
+      "mean_min": 0.84,
+      "shape": 2.596
+    },
+    "large": {
+      "mean_min": 1.95,
+      "shape": 1.835
+    }
+  },
+  "patience_mean_min": 5.602,
+  "balk_queue_threshold": 8,
+  "balk_prob": 0.0,
+  "wait_threshold_min": 5.0,
+  "target_bad_fraction": 0.1,
+  "kiosk_share_of_small": 0.0
+}
